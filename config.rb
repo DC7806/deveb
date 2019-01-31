@@ -1,5 +1,6 @@
 require 'slim'
 require 'sprockets/es6'
+require 'lib/models'
 
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions

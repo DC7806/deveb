@@ -7,6 +7,8 @@ gem 'middleman-sprockets', '~> 4.1', '>= 4.1.1'
 gem 'middleman-gh_pages'
 gem 'sprockets-es6', '~> 0.9.2'
 
+gem 'active_hash', '~> 2.2'
+
 gem 'slim', '~> 4.0', '>= 4.0.1'
 gem 'sass', '~> 3.7', '>= 3.7.3'
 
