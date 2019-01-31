@@ -1,0 +1,11 @@
+nav.navbar.is-light[role="navigation" aria-label="main navigation"]
+  .navbar-brand
+    = link_to 'deveb', '/', class: 'navbar-item is-size-4'
+    a.navbar-burger.burger[role="button" aria-label="menu" aria-expanded="false" data-target="navbar"]
+      span[aria-hidden="true"]
+      span[aria-hidden="true"]
+      span[aria-hidden="true"]
+  #navbar.navbar-menu
+    .navbar-start
+      = link_to 'portfolio', 'portfolio', class: 'navbar-item'
+      = link_to 'blog', 'blog', class: 'navbar-item'
