@@ -1,4 +1,5 @@
 require 'slim'
+require 'sprockets/es6'
 
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
@@ -21,7 +22,9 @@ set :images_dir,     'assets/images'
 set :js_dir,         'assets/javascripts'
 set :relative_links, true
 
-activate :sprockets
+activate :sprockets do |s|
+  s.supported_output_extensions << '.es6'
+end
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
