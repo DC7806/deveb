@@ -1,0 +1,137 @@
+$sizes-list: 0 5 10 15 20 25 30 35 40 45 50 55 60;
+
+@each $size in $sizes-list {
+  .has-p-#{$size} {
+    padding: #{$size}px;
+  }
+  .has-px-#{$size} {
+    padding-right: #{$size}px;
+    padding-left:  #{$size}px;
+  }
+  .has-py-#{$size} {
+    padding-top:    #{$size}px;
+    padding-bottom: #{$size}px;
+  }
+  .has-pt-#{$size} {
+    padding-top: #{$size}px;
+  }
+  .has-pb-#{$size} {
+    padding-bottom: #{$size}px;
+  }
+  .has-pr-#{$size} {
+    padding-right: #{$size}px;
+  }
+  .has-pl-#{$size} {
+    padding-left: #{$size}px;
+  }
+  .has-m-#{$size} {
+    margin: #{$size}px;
+  }
+  .has-mx-#{$size} {
+    margin-right: #{$size}px;
+    margin-left:  #{$size}px;
+  }
+  .has-my-#{$size} {
+    margin-top:    #{$size}px;
+    margin-bottom: #{$size}px;
+  }
+  .has-mt-#{$size} {
+    margin-top: #{$size}px;
+  }
+  .has-mb-#{$size} {
+    margin-bottom: #{$size}px;
+  }
+  .has-mr-#{$size} {
+    margin-right: #{$size}px;
+  }
+  .has-ml-#{$size} {
+    margin-left: #{$size}px;
+  }
+}
+
+@mixin padding($device, $size) {
+  .has-p-#{$device}-#{$size} {
+    padding: #{$size}px;
+  }
+  .has-px-#{$device}-#{$size} {
+    padding-right: #{$size}px;
+    padding-left:  #{$size}px;
+  }
+  .has-py-#{$device}-#{$size} {
+    padding-top:    #{$size}px;
+    padding-bottom: #{$size}px;
+  }
+  .has-pt-#{$device}-#{$size} {
+    padding-top: #{$size}px;
+  }
+  .has-pb-#{$device}-#{$size} {
+    padding-bottom: #{$size}px;
+  }
+  .has-pr-#{$device}-#{$size} {
+    padding-right: #{$size}px;
+  }
+  .has-pl-#{$device}-#{$size} {
+    padding-left: #{$size}px;
+  }
+}
+
+@mixin margin($device, $size) {
+  .has-m-#{$device}-#{$size} {
+    margin: #{$size}px;
+  }
+  .has-mx-#{$device}-#{$size} {
+    margin-right: #{$size}px;
+    margin-left:  #{$size}px;
+  }
+  .has-my-#{$device}-#{$size} {
+    margin-top:    #{$size}px;
+    margin-bottom: #{$size}px;
+  }
+  .has-mt-#{$device}-#{$size} {
+    margin-top: #{$size}px;
+  }
+  .has-mb-#{$device}-#{$size} {
+    margin-bottom: #{$size}px;
+  }
+  .has-mr-#{$device}-#{$size} {
+    margin-right: #{$size}px;
+  }
+  .has-ml-#{$device}-#{$size} {
+    margin-left: #{$size}px;
+  }
+}
+
+@include mobile {
+  @each $size in $sizes-list {
+    @include padding(xs, $size);
+    @include margin(xs, $size);
+  }
+}
+
+@include tablet {
+  @each $size in $sizes-list {
+    @include padding(sm, $size);
+    @include margin(sm, $size);
+  }
+}
+
+@include desktop {
+  @each $size in $sizes-list {
+    @include padding(md, $size);
+    @include margin(md, $size);
+  }
+}
+
+@include widescreen {
+  @each $size in $sizes-list {
+    @include padding(lg, $size);
+    @include margin(lg, $size);
+  }
+}
+
+@include fullhd {
+  @each $size in $sizes-list {
+    @include padding(hd, $size);
+    @include margin(hd, $size);
+  }
+}

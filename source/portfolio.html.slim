@@ -1,0 +1,26 @@
+---
+title: Portfolio
+---
+
+#portfolio.container.has-py-40
+  h1.title.is-2.has-text-centered Portfolio
+  .portfolio-list.has-pt-20
+  - Portfolio.all.in_groups_of(2).each do |groups|
+    .columns
+      - groups.each do |portfolio|
+        .column.is-half-desktop.is-flex
+          .card
+            .card-image
+              figure.image.is-16by9
+                = image_tag "portfolio/#{portfolio.image}.jpg"
+            .card-content
+              .content
+                h2.title.is-4 = portfolio.title
+                .showcase
+                  = render_repo_url(portfolio.repo)
+                  = link_to portfolio.url, target: :_blank, class: 'button showcase__button is-medium' do
+                    i.fa.fa-desktop
+                p = portfolio.description
+                .content__stack-wrapper.has-mt-20
+                  - portfolio.stacks.each do |stack|
+                    = link_to "##{stack}", '#', class: 'stack-item has-mr-5'

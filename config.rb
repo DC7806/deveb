@@ -1,6 +1,9 @@
 require 'slim'
 require 'sprockets/es6'
 require 'lib/models'
+require 'helpers/application_helpers'
+
+helpers ApplicationHelpers
 
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
@@ -65,8 +68,9 @@ configure :build do
   activate :minify_javascript
   activate :gzip
   activate :relative_assets
+  activate :asset_hash
 end
 
 activate :gh_pages do |gh_pages|
-  gh_pages.remote = 'git@github.com:DC7806/deveb.git'
+  gh_pages.remote = ENV['GIT_PAGE_REPO']
 end

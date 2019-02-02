@@ -1,12 +1,67 @@
-project_1:
-  title: ttile
-  description: desc
-  stack: stacks
-  url: www.google.com
-  repo: www.google.com
-project_2:
-  title: ttile2
-  description: desc2
-  stack: stacks
-  url: www.google.com
-  repo: www.google.com
+-
+  title: Hwang's Pharmaceutical
+  description: A multi-lang brand site, featuring admin authentication & authorization, message mailer, API, and meta tags management
+  stacks: 
+    - Ruby
+    - Rails
+    - HTML
+    - CSS
+    - JavaScript
+  url: https://www.hwangs.com.tw
+  repo: hwangs
+  image: hwangs
+-
+  title: AMF Creative Studio
+  description: A multi-lang (content to be generated) site built for AMF Creative Studio with features including admin authentication and message mailer
+  stacks:
+    - Ruby
+    - Rails
+    - HTML
+    - CSS
+    - JavaScript
+  url: https://www.amfcreative.co
+  repo: amf
+  image: amf
+-
+  title: deveb
+  description: A personal site mainly for keeping and sharing dev notes
+  stacks: 
+    - Ruby
+    - Middleman
+    - HTML
+    - CSS
+    - JavaScript
+  url: https://www.deveb.cc
+  repo: deveb
+  image: deveb
+-
+  title: Funario Blog
+  description: A personal blog CMS with pure html and css frontend design
+  stacks: 
+    - Ruby
+    - Rails
+    - HTML
+    - CSS
+  url: https://www.furario.cc
+  repo: funario
+  image: funario
+-
+  title: Nourii Brand Site
+  description: Frontend pages development
+  stacks: 
+    - HTML
+    - CSS
+    - JavaScript
+  url: https://www.nourii.co
+  repo:
+  image: nourii
+-
+  title: ScenTea
+  description: Layout customization, product pages development, content insertion with GTM
+  stacks: 
+    - HTML
+    - CSS
+    - JavaScript
+  url: https://www.scentea.co
+  repo:
+  image: scentea
