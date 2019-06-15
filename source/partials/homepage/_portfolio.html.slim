@@ -1,0 +1,18 @@
+section.section.has-pt-0
+  .container
+    h1.title.has-text-weight-light.has-text-centered
+      | Works
+    .columns
+      .column.is-10-desktop.is-offset-1-desktop
+        .portfolio
+          - portfolio.each do |port|
+            .portfolio__wrapper
+              .columns.has-mb-15
+                .column.is-two-thirds-desktop
+                  = image_tag "portfolio/#{port.image}.jpg"
+                .column
+                  .content.has-mt-10
+                    p.is-size-4.has-text-weight-light = "{ #{port.title} }"
+                    p.has-text-justified = port.description
+        / = link_to 'All Works', 'portfolio',  class: 'button is-size-5 has-px-30'
+                

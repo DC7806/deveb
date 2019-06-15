@@ -1,0 +1,17 @@
+#intro {
+  .intro__avator {
+    margin: 0 auto;
+  }
+  .intro__email {
+    border-top: 1px solid whitesmoke
+  } 
+}
+
+.portfolio {
+  .slick-slide {
+    height: unset;
+  }
+  img {
+    width: 100%;
+  }
+}

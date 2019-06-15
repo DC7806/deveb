@@ -1,0 +1,15 @@
+section.section
+    .container
+      .columns
+        #intro.column.is-half-tablet.is-offset-3
+          .has-text-centered
+            figure.intro__avator.image.is-128x128
+              = image_tag 'homepage/profile.jpg', class: 'is-rounded'
+            h1.title.is-3.has-text-weight-light.has-my-15
+              = profile.name
+            h2.subtitle.is-4.has-text-weight-light.has-mt-0.has-mb-10
+              = profile.summary
+            h3.intro__email.is-size-4.has-text-weight-light.has-py-10
+              = profile.email
+            = link_to ENV['GITHUB_ACCOUNT'], target: :_blank do
+              i.fab.fa-github.fa-2x

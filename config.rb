@@ -24,6 +24,8 @@ page '/*.txt', layout: false
 set :css_dir,        'assets/stylesheets'
 set :images_dir,     'assets/images'
 set :js_dir,         'assets/javascripts'
+set :fonts_dir,      'assets/fonts'
+
 set :relative_links, true
 
 activate :sprockets do |s|

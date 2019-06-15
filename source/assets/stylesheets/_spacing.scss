@@ -2,102 +2,102 @@ $sizes-list: 0 5 10 15 20 25 30 35 40 45 50 55 60;
 
 @each $size in $sizes-list {
   .has-p-#{$size} {
-    padding: #{$size}px;
+    padding: #{$size}px !important;
   }
   .has-px-#{$size} {
-    padding-right: #{$size}px;
-    padding-left:  #{$size}px;
+    padding-right: #{$size}px !important;
+    padding-left:  #{$size}px !important;
   }
   .has-py-#{$size} {
-    padding-top:    #{$size}px;
-    padding-bottom: #{$size}px;
+    padding-top:    #{$size}px !important;
+    padding-bottom: #{$size}px !important;
   }
   .has-pt-#{$size} {
-    padding-top: #{$size}px;
+    padding-top: #{$size}px !important;
   }
   .has-pb-#{$size} {
-    padding-bottom: #{$size}px;
+    padding-bottom: #{$size}px !important;
   }
   .has-pr-#{$size} {
-    padding-right: #{$size}px;
+    padding-right: #{$size}px !important;
   }
   .has-pl-#{$size} {
-    padding-left: #{$size}px;
+    padding-left: #{$size}px !important;
   }
   .has-m-#{$size} {
-    margin: #{$size}px;
+    margin: #{$size}px !important;
   }
   .has-mx-#{$size} {
-    margin-right: #{$size}px;
-    margin-left:  #{$size}px;
+    margin-right: #{$size}px !important;
+    margin-left:  #{$size}px !important;
   }
   .has-my-#{$size} {
-    margin-top:    #{$size}px;
-    margin-bottom: #{$size}px;
+    margin-top:    #{$size}px !important;
+    margin-bottom: #{$size}px !important;
   }
   .has-mt-#{$size} {
-    margin-top: #{$size}px;
+    margin-top: #{$size}px !important;
   }
   .has-mb-#{$size} {
-    margin-bottom: #{$size}px;
+    margin-bottom: #{$size}px !important;
   }
   .has-mr-#{$size} {
-    margin-right: #{$size}px;
+    margin-right: #{$size}px !important;
   }
   .has-ml-#{$size} {
-    margin-left: #{$size}px;
+    margin-left: #{$size}px !important;
   }
 }
 
 @mixin padding($device, $size) {
   .has-p-#{$device}-#{$size} {
-    padding: #{$size}px;
+    padding: #{$size}px !important;
   }
   .has-px-#{$device}-#{$size} {
-    padding-right: #{$size}px;
-    padding-left:  #{$size}px;
+    padding-right: #{$size}px !important;
+    padding-left:  #{$size}px !important;
   }
   .has-py-#{$device}-#{$size} {
-    padding-top:    #{$size}px;
-    padding-bottom: #{$size}px;
+    padding-top:    #{$size}px !important;
+    padding-bottom: #{$size}px !important;
   }
   .has-pt-#{$device}-#{$size} {
-    padding-top: #{$size}px;
+    padding-top: #{$size}px !important;
   }
   .has-pb-#{$device}-#{$size} {
-    padding-bottom: #{$size}px;
+    padding-bottom: #{$size}px !important;
   }
   .has-pr-#{$device}-#{$size} {
-    padding-right: #{$size}px;
+    padding-right: #{$size}px !important;
   }
   .has-pl-#{$device}-#{$size} {
-    padding-left: #{$size}px;
+    padding-left: #{$size}px !important;
   }
 }
 
 @mixin margin($device, $size) {
   .has-m-#{$device}-#{$size} {
-    margin: #{$size}px;
+    margin: #{$size}px !important;
   }
   .has-mx-#{$device}-#{$size} {
-    margin-right: #{$size}px;
-    margin-left:  #{$size}px;
+    margin-right: #{$size}px !important;
+    margin-left:  #{$size}px !important;
   }
   .has-my-#{$device}-#{$size} {
-    margin-top:    #{$size}px;
-    margin-bottom: #{$size}px;
+    margin-top:    #{$size}px !important;
+    margin-bottom: #{$size}px !important;
   }
   .has-mt-#{$device}-#{$size} {
-    margin-top: #{$size}px;
+    margin-top: #{$size}px !important;
   }
   .has-mb-#{$device}-#{$size} {
-    margin-bottom: #{$size}px;
+    margin-bottom: #{$size}px !important;
   }
   .has-mr-#{$device}-#{$size} {
-    margin-right: #{$size}px;
+    margin-right: #{$size}px !important;
   }
   .has-ml-#{$device}-#{$size} {
-    margin-left: #{$size}px;
+    margin-left: #{$size}px !important;
   }
 }
 

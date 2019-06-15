@@ -10,3 +10,7 @@ end
 class Portfolio < ActiveYaml::Base
   include Sourceable
 end
+
+class Profile < ActiveYaml::Base
+  include Sourceable
+end
