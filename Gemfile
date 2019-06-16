@@ -14,6 +14,8 @@ gem 'sass', '~> 3.7', '>= 3.7.3'
 
 gem 'middleman-blog', '~> 4.0', '>= 4.0.1'
 
+gem 'pry'
+
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 
