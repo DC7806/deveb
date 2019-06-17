@@ -12,8 +12,20 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-# Layouts
-# https://middlemanapp.com/basics/layouts/
+activate :directory_indexes
+
+activate :blog do |blog|
+  blog.prefix = 'blogs'
+  blog.permalink = "{permalink}"
+  blog.default_extension = ".md"
+  blog.paginate = true
+  blog.per_page = 1
+  blog.new_article_template = File.expand_path("source/blogs/template.html.erb", File.dirname(__FILE__))
+end
+
+activate :sprockets do |s|
+  s.supported_output_extensions << '.es6'
+end
 
 # Per-page layout changes
 page '/*.xml', layout: false
@@ -28,10 +40,6 @@ set :fonts_dir,      'assets/fonts'
 
 set :relative_links, true
 
-activate :sprockets do |s|
-  s.supported_output_extensions << '.es6'
-end
-
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
@@ -45,19 +53,6 @@ end
 #     which_fake_page: 'Rendering a fake page with a local variable'
 #   },
 # )
-
-# Helpers
-# Methods defined in the helpers block are available in templates
-# https://middlemanapp.com/basics/helper-methods/
-
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
-
-# Build-specific configuration
-# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :development do
   activate :livereload do |site|
