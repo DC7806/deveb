@@ -1,0 +1,10 @@
+#portfolio .card {
+  width: 100%; }
+  #portfolio .card .showcase {
+    margin-bottom: 1.5rem; }
+
+#portfolio .showcase .showcase__button {
+  width: 80px; }
+
+#portfolio .showcase .showcase__button:first-child {
+  margin-right: .8rem; }

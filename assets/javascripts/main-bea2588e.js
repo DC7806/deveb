@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".portfolio").slick({autoplay:!0,infinite:!0,dots:!0,arrows:!1,slidesToShow:1})});
